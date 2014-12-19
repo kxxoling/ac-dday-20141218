@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+<!--
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span>
+          <img src="images/segmentfault.svg" style="height: 100px;">
+          <span style="font-size: 120px;">/</span>
+          <img src="images/acc.png" style="height: 65px; width: 311px;">
+      </span>
+    </article>
+  </slide>
+-->
+
+  <slide class="title-slide segue nobackground">
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <img src="images/acc.png" style="height: 65px; width: 311px;">
+      <h1 style="height: 210px;" data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide class="quote">
+    <hgroup>
+      <h2>什么是 web 组件化？</h2>
+    </hgroup>
+    <article>
+        <p style="margin-top: 118px; color: #555; line-height: 40px; font-size: 30px;" class="auto-fadein vcenter">组件化是一个软件开发术语，通常是指一些出于通用性设计的，用来构建较大型应用程序的软件，并没有一种固定的表现形式。</p>
+        <p style="margin-top:28px; color: #555; line-height: 40px; font-size: 30px;" class="auto-fadein vcenter">组件可以是有UI（用户界面）的，也可以是单纯的服务和逻辑。</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>web 组件化的发展</h2>
+    </hgroup>
+    <article>
+      <ul class="build" style="margin-top:100px; height: 35px; line-height: 55px;">
+        <li>HTML 片段／JSP tag／浏览器Frame</li>
+        <li>JS MV* 框架：Angular、Backbone、Avalon 等</li>
+        <li>CSS 预处理框架：LESS、SASS 等</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>我们的组件化开发</h2>
+    </hgroup>
+    <article class="build" style="margin-top:100px; height: 35px; line-height: 55px;">
+      <ul class="build">
+        <li>模板继承 & HTML 片段引用</li>
+        <li>基于模版语言的 HTML 生成函数</li>
+        <li>前端 MVVM 框架</li>
+        <li>融合前后端的单点登录（SSO）组件</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>前后端融合 web 组件化</h2>
+    </hgroup>
+    <article class="">
+      <ul class="build">
+          <li>富文本编辑器</li>
+          <li>第三方评论系统，如：Disqus、多说<div style="height: 100px">
+          <img src="images/disqus.jpg" class="reflect vleft" alt="Login" title="Login" style="height: inherit; margin-top:10px">
+          <img src="images/duoshuo.jpg" class="reflect vcenter" alt="Login" title="Login" style="height: inherit"></div>
+        </li>
+        <li style="margin-top: 40px">第三方登录系统，如OAuth、Open-ID<div style="height: 100px">
+            <img src="images/openid.gif" class="reflect vleft" style="height: inherit; margin-top:10px">
+            <img src="images/oauth.png" class="reflect vcenter" style="height: inherit; margin-top:10px">
+          </div>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>已经实现的功能</h2>
+    </hgroup>
+    <article class="flexbox">
+      <ul class="build" style="width: 100%;">
+        <li><p>登录 & 注册</p>
+            <div style="margin: 10px auto; width: 509px;">
+          <img src="images/login.png" class="reflect vcenter" alt="Login" title="Login">
+            </div>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>已经实现的功能</h2>
+    </hgroup>
+    <article class="flexbox">
+        <ul style="width: 100%">
+          <li>个人资料编辑
+              <div style="margin: 10px auto; width: 518px;">
+            <img src="images/user.png" class="vcenter" alt="User Page" title="User Page">
+              </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>路线图</h2>
+    </hgroup>
+    <article>
+      <ul class="build" style="margin-top: 80px; font-size: 30px;">
+        <li>社交账号登录</li>
+        <li>多账户系统</li>
+        <li>IM、私信及系统通知</li>
+        <li>友邻推荐系统</li>
+        <li>移动网页适配以及移动应用开发的 API</li>
+        <li>插件、扩展</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>登录流程演示</h2>
+    </hgroup>
+    <article>
+      <img src="images/uml.png" class="vcenter" alt="UML" title="UML" style="margin: 0 auto; display: block;">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>在自己的应用中实现 SSO 登录</h2>
+      <h3>HTML 使用</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="javascript">
+&lt;script type='text/javascript'&gt;
+CONST.SSO = {
+    ID: {{ g.app_id  }},
+    QINIU: "//dn-acsso.qbox.me",
+    URL: "//{{ g.sso_host }}"
+}
+$$('SSO/user.login')
+&lt;/script&gt;
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>在自己的应用中实现 SSO 登录</h2>
+      <h3>前端依赖</h3>
+    </hgroup>
+    <article class="smaller">
+        <pre class="prettyprint" data-lang="html">
+&lt;!--第三方依赖--&gt;
+&lt;script src="somedir/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="somedir/jquery-ui.js"&gt;&lt;/script&gt;
+&lt;script src="somedir/jquery.zh_cn.js"&gt;&lt;/script&gt;
+&lt;script src="somedir/avalon.js"&gt;&lt;/script&gt;
+&lt;script src="somedir/slide.js"&gt;&lt;/script
+&lt;script src="somedir/jquery.poshytip.js"&gt;&lt;/script&gt;
+&lt;script src="somedir/jquery.fancybox.js"&gt;&lt;/script&gt;
+
+&lt;!--我们提供的 CSS/JS--&gt;
+&lt;link rel="stylesheet" href="ac-sso.css"&gt;
+&lt;script src="ac-sso.js"&gt;&lt;/script&gt;
+        </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>在自己的应用中实现 SSO 登录</h2>
+      <h3>Session 校验</h3>
+    </hgroup>
+    <article>
+        <pre class="prettyprint" data-lang="python">
+def sso_logined(func):
+    """验证服务器端请求的装饰器"""
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        if varify_failed:
+            abort(401, '验证失败！')
+        return func(*args, **kwargs)
+    return wrapper</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>在自己的应用中实现 SSO 登录</h2>
+      <h3>后端接口实现</h3>
+    </hgroup>
+    <article class="smaller">
+        <pre class="prettyprint" data-lang="python">
+@app.route('/sso_sync')
+def sso_sync():
+    """同步服务器端数据"""
+    return request.args.get('callback', '') + '({})'
+
+
+@app.route('/sso_login')
+@sso_logined
+def sso_login():
+    # 提供用户登录状态
+    callback = request.args.get('callback', '')
+
+    # 如果用户信息不符合，则同步用户数据
+    if not is_user_info_newest(g.sso_user_id, g.user_info_id):
+        return redirect(sign_callback_url(
+            g.sso_session, callback, dict(sso_id=g.sso_user_id, app_id=APP_ID)
+        ))
+
+    return callback + '({})'
+
+        </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>实例演示</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://b.dev/"></iframe>
+    </article>
+  </slide>
+
+  <slide style="padding-left: 0px; padding-right: 0px;">
+    <article>
+      <iframe data-src="http://42py.com/" scrolling="auto" style="width: 1100px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup class="vcenter">
+      <h2>完全开源！</h2>
+    </hgroup>
+    <article>
+      <ul style="margin-top: 100px">
+        <li>SSO 源代码：<a href="https://bitbucket.org/z42/sso">BitBucket: z42/sso</a></li>
+        <li>demo 源代码：<a href="https://github.com/kxxoling/ac-sso-demo">GitHub: kxxoling/ac-sso-demo</a></li>
+        <li>文档：<a href="http://z42.tech2ipo.com">GitBook：z42.tech2ipo.com</a></li>
+        <li>SDK、更多教程正在准备中……</li>
+      </ul>
+        <p style="font-size:40px; margin-top: 60px;">欢迎 fork & pull request！</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter auto-fadein">
+      <h2>&lt;Thank You/&gt;</h2>
+      <p>欢迎联系 / 加入我们！</p>
+      <p class="auto-fadein" data-config-contact>
+        <ul>
+            <li>Email: wangran@pe.vc / kxxoling@gmail.com</li>
+            <li>GitHub: @kxxoling</li>
+            <li>BitBucket: @windrunner1992</li>
+        </ul>
+      </p>
+    </article>
+  </slide>
+
+</slides>
+</body>
+</html>
